@@ -1,0 +1,53 @@
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.is-hidden {
+  display: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+
+  color: var(--modal-bg-color);
+
+  background-color: var(--modal-text-color);
+}
+.container {
+  width: 100%;
+  padding: 25px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: var(--modal-text-color);
+
+  @media screen and (min-width: 320px) {
+    max-width: 320px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding: 10px 90px 18px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    padding-left: 175px;
+    padding-right: 175px;
+  }
+}
+.list {
+  list-style-type: none;
+}

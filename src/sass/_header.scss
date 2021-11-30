@@ -1,0 +1,63 @@
+/* Header */
+
+// .header__container {
+//   background-image: url(../images/mobile/pic-mob.png);
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+
+//   @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+//     background-image: url(../images/tablet/pic-tablet.png);
+//   }
+
+//   @media screen and (min-width: 1280px) {
+//     background-image: url(../images/desktop/pic-desktop.png);
+//   }
+// }
+.header__container {
+  background-color: transparent;
+}
+
+.header__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 78px;
+  max-width: 212px;
+
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  color: var(--accent-text-color);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    max-width: 353px;
+    font-size: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-weight: 900;
+    font-size: 49px;
+    max-width: 588px;
+  }
+}
+
+.logo {
+  position: absolute;
+  // left: 30px;
+  left: 0;
+  top: 0;
+}
+
+.logo__link {
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.75;
+  }
+}

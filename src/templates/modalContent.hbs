@@ -1,0 +1,101 @@
+<button class="modal__btn-close" aria-label="Close" type="button" data-modal-close>
+
+</button>
+<img class="modal__author-img" src="{{images.3.url}}" alt="poster">
+<div class="modal__position">
+    <div class="modal__poster-container">
+        <img class="modal__poster-img visually-hidden" src="{{modalImg}}" alt="poster" width="233" height="416" />
+    </div>
+    <div class="modal__info">
+        <ul class="list modal__list">
+            <li>
+                {{#if info}}
+                <span class="modal__info-title">Info</span>
+                {{/if}}
+                <p class="modal__info-text " id="scrollbar">
+                    {{info}}
+                </p>
+            </li>
+            <li>
+                <span class="modal__info-title">When</span>
+                <p class="modal__info-text">{{date}}{{#if time}} at {{time}} ({{timezone}}){{/if}}</p>
+
+                {{!-- timer >>>>>>>>>>>>>>>>>>>>>>>>> --}}
+                <div class="timer puff-in-center" id="timer-1">
+                    <div class="timer__field">
+                        <span class="timer__value" data-value="days">00</span>
+                        <span class="timer__label">DAYS</span>
+                    </div>
+                    <div class="timer__colon">:</div> 
+                    <div class="timer__field">
+                        <span class="timer__value" data-value="hours">00</span>
+                        <span class="timer__label">HOURS</span>
+                    </div>
+                    <div class="timer__colon">:</div>
+                    <div class="timer__field">
+                        <span class="timer__value" data-value="mins">00</span>
+                        <span class="timer__label">MINUTES</span>
+                    </div>
+                    <div class="timer__colon">:</div>               
+                    <div class="timer__field">
+                        <span class="timer__value" data-value="secs">00</span>
+                        <span class="timer__label">SECONDS</span>
+                    </div>
+                </div>
+                {{!-- timer <<<<<<<<<<<<<<<<<<<<<<<< --}} 
+                
+            </li>
+            <li>
+                <span class="modal__info-title">Where</span>
+                <p class="modal__info-text">{{where}}</p>
+            </li>
+            <li>
+                <span class="modal__info-title">Who</span>
+                <p class="modal__info-text">{{who}}</p>
+            </li>
+            <li>
+                <span class="modal__info-title">Prices</span>
+                <p class="modal__info-text prices">
+                    <svg class="modal-ticket-icon" width="180" height="170">
+                        <use href="./images/icons/sprite.svg#icon-ticket"></use>
+                    </svg>
+                    {{priceRanges.0.[type]}} {{priceRanges.0.[min]}} -
+                    {{priceRanges.0.[max]}}
+                    {{priceRanges.0.[currency]}}
+                </p>
+
+                <ul class="list modal__btn-container">
+            </li>
+            {{#if products.0.[url]}}
+            <li>
+
+                <a class="modal__btn modal__btn-buy" href='{{products.0.[url]}}' target="_blank"
+                    aria-label="Buy tickets">Buy tickets</a>
+                {{else}}
+                <a class="modal__btn modal__btn-buy" href='{{ attractions.0.[url]}}' target="_blank"
+                    aria-label="Buy tickets">Buy tickets</a>
+            {{/if}}
+            </li>
+
+            {{!-- <li class="modal__list list">{{#if priceRanges.1.[type]}}
+                <p class="modal__info-text prices"><svg class="modal-ticket-icon" width="180" height="170">
+                        <use href="./images/icons/sprite.svg#icon-ticket"></use>
+                    </svg>{{priceRanges.1.[type]}} {{priceRanges.1.[min]}} -
+                    {{priceRanges.1.[max]}} {{priceRanges.1.[currency]}} </p>
+                {{/if}}
+            </li>
+
+            {{#if products.1.[url]}}
+            <li> <a class="modal__btn modal__btn-buy" href='{{products.1.[url]}}' target="_blank"
+                    aria-label="Buy tickets">Buy tickets</a>
+                {{/if}}</li> --}}
+        </ul>
+        </li>
+        </ul>
+    </div>
+</div>
+
+<button class="modal__btn modal__btn-more" type="button" aria-label="More from this author" data-action="load"
+    data-idattraction={{idAttraction}}>More from
+    this
+    author</button>

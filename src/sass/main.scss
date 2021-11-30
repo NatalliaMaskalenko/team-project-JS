@@ -1,0 +1,22 @@
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+
+@import './base/common';
+@import './base/root-colors';
+
+@import './header';
+@import './search-bar';
+@import './set-of-cards';
+@import './footer';
+@import './modal';
+@import './timer/timer';
+@import './_top-part';
+@import './_bottom-part';
+@import './_pagination';
+@import './_scroll';
+@import './animation/_animation-cards-set';
+
+@import '../../node_modules/tui-pagination/dist/tui-pagination.min.css';
+@import './pnotify';

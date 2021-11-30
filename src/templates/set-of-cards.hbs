@@ -1,0 +1,18 @@
+<ul class='list set-of-cards__container'>
+
+  {{#each this}}
+    <li class='set-of-cards__item scale-in-center' data-id={{id}}>
+      <img
+        class='set-of-cards__img swirl-in-fwd'
+        src={{cardImg}}
+        {{!-- data-source={{images.9.url}} --}}
+        alt={{name}}
+      />
+      <div class='set-of-cards__decorative-frame swirl-in-fwd'></div>
+      <h2 class='set-of-cards__title'>{{name}}</h2>
+
+      <p class='set-of-cards__date-of-incident'>{{date}}</p>
+      <p class='set-of-cards__location' href=''>{{venues}}</p>
+    </li>
+  {{/each}}
+</ul>

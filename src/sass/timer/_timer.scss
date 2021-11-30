@@ -1,0 +1,36 @@
+.timer {
+  display: flex;
+  justify-content: space-evenly;
+  color: var(--modal-text-color);
+  margin-bottom: 20px;
+
+  border: 1px solid var(--modal-accent-first-color);
+  padding: 4px 10px;
+
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.timer__field {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 50px;
+}
+
+.timer__value {
+  font-size: 26px;
+  color: var(--accent-text-color);
+  font-weight: 500;
+}
+
+.timer__label {
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.timer__colon {
+  font-size: 24px;
+  color: var(--modal-accent-first-color);
+  padding-left: 1px;
+  padding-right: 1px;
+}

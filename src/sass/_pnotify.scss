@@ -1,0 +1,15 @@
+.brighttheme-error {
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent,
+    transparent 10px,
+    rgba(59, 8, 126, 0.3) 35px,
+    rgba(255, 255, 255, 0.3) 70px
+  ) !important;
+}
+.brighttheme-container {
+  padding: 1.3rem;
+  background-color: black !important;
+  border: 2px solid white;
+  color: white !important;
+}
